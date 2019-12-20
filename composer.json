@@ -1,0 +1,34 @@
+{
+    "name": "los/mezzio-swoole-newrelic",
+    "description": "A PHP lib to enable Newrelic with mezzio/expressive + swoole",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leandro Silva",
+            "email": "lansoweb@hotmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "Los\\MezzioSwooleNewrelic\\" : "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "^7.2",
+        "ext-swoole": "*",
+        "psr/container": "^1.0",
+        "psr/http-message": "^1.0",
+        "zendframework/zend-expressive-swoole": "^2.5",
+        "zendframework/zend-stratigility": "^3.2"
+    },
+    "extra": {
+        "zf": {
+            "component": "Los\\MezzioSwooleNewrelic",
+            "config-provider": "Los\\MezzioSwooleNewrelic\\ConfigProvider"
+        }
+    }
+}
