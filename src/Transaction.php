@@ -37,7 +37,7 @@ class Transaction
 
     public function stop() : void
     {
-        newrelic_end_of_transaction();
+        newrelic_end_transaction();
     }
 
     protected function fillGlobalVars(Request $request) : array
