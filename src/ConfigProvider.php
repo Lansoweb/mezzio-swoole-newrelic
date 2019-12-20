@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Los\MezzioSwooleNewrelic;
 
+use Zend\Expressive\Swoole\SwooleRequestHandlerRunner;
 use Zend\Stratigility\Middleware\ErrorHandler;
 
 /**

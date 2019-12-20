@@ -33,6 +33,6 @@ class SwooleRequestHandlerRunner extends ZendSwooleRequestHandlerRunner
 
         parent::onRequest($request, $response);
 
-        $transaction->finish();
+        $transaction->stop();
     }
 }
