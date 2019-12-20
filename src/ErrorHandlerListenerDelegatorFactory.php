@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace Los\MezzioSwooleNewrelic;
 
 use Psr\Container\ContainerInterface;

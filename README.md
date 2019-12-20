@@ -26,3 +26,9 @@ Just be sure that it's after the default Swoole module:
 The lib will get newrelic's appname and license from the ini using ini_get, 
 but you can define an environment var NEWRELIC_APPNAME to be used 
 instead of the newrelic.appname ini setting.
+
+There is also a NewRelicMiddleware that will name the transactions with the zend-expressive-router router names. Just include inside your pipeline.php after the RouterMiddleware:
+```php
+$app->pipe(RouteMiddleware::class);
+$app->pipe(NewRelicMiddleware::class);
+```
