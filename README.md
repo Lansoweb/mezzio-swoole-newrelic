@@ -15,8 +15,8 @@ Just be sure that it's after the default Swoole module:
 
 ```php
     // Swoole config to overwrite some services (if installed)
-    class_exists(\Zend\Expressive\Swoole\ConfigProvider::class)
-        ? \Zend\Expressive\Swoole\ConfigProvider::class
+    class_exists(\Mezzio\Swoole\ConfigProvider::class)
+        ? \Mezzio\Swoole\ConfigProvider::class
         : function () {
             return[];
         },

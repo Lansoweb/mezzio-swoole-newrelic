@@ -9,9 +9,9 @@
             "email": "lansoweb@hotmail.com"
         }
     ],
-    "autoload" : {
-        "psr-4" : {
-            "Los\\MezzioSwooleNewrelic\\" : "src/"
+    "autoload": {
+        "psr-4": {
+            "Los\\MezzioSwooleNewrelic\\": "src/"
         }
     },
     "config": {
@@ -22,8 +22,9 @@
         "ext-swoole": "*",
         "psr/container": "^1.0",
         "psr/http-message": "^1.0",
-        "zendframework/zend-expressive-swoole": "^2.5",
-        "zendframework/zend-stratigility": "^3.2"
+        "mezzio/mezzio-swoole": "^2.5",
+        "laminas/laminas-stratigility": "^3.2",
+        "laminas/laminas-dependency-plugin": "^0.2"
     },
     "extra": {
         "zf": {

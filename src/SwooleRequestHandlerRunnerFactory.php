@@ -7,12 +7,12 @@ namespace Los\MezzioSwooleNewrelic;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Swoole\Http\Server as SwooleHttpServer;
-use Zend\Expressive\ApplicationPipeline;
-use Zend\Expressive\Response\ServerRequestErrorResponseGenerator;
-use Zend\Expressive\Swoole\HotCodeReload\Reloader;
-use Zend\Expressive\Swoole\Log\AccessLogInterface;
-use Zend\Expressive\Swoole\PidManager;
-use Zend\Expressive\Swoole\StaticResourceHandlerInterface;
+use Mezzio\ApplicationPipeline;
+use Mezzio\Response\ServerRequestErrorResponseGenerator;
+use Mezzio\Swoole\HotCodeReload\Reloader;
+use Mezzio\Swoole\Log\AccessLogInterface;
+use Mezzio\Swoole\PidManager;
+use Mezzio\Swoole\StaticResourceHandlerInterface;
 
 class SwooleRequestHandlerRunnerFactory
 {
@@ -23,7 +23,7 @@ class SwooleRequestHandlerRunnerFactory
             : null;
 
         $expressiveSwooleConfig = $container->has('config')
-            ? $container->get('config')['zend-expressive-swoole']
+            ? $container->get('config')['mezzio-swoole']
             : [];
 
         $swooleHttpServerConfig = $expressiveSwooleConfig['swoole-http-server'] ?? [];

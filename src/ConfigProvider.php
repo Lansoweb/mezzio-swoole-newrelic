@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Los\MezzioSwooleNewrelic;
 
-use Zend\Expressive\Swoole\SwooleRequestHandlerRunner;
-use Zend\Stratigility\Middleware\ErrorHandler;
+use Mezzio\Swoole\SwooleRequestHandlerRunner;
+use Laminas\Stratigility\Middleware\ErrorHandler;
 
 /**
  * The configuration provider for the Api Hotel module

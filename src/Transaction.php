@@ -26,6 +26,10 @@ class Transaction
 
     public function start() : void
     {
+        if (! extension_loaded('newrelic')) {
+            return;
+        }
+
         $snapshot = $this->fillGlobalVars($this->request);
         try {
             newrelic_start_transaction($this->appName, $this->license);
@@ -37,6 +41,10 @@ class Transaction
 
     public function stop() : void
     {
+        if (! extension_loaded('newrelic')) {
+            return;
+        }
+
         newrelic_end_transaction();
     }
 

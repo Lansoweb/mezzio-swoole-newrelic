@@ -2,15 +2,15 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 1.1.0 - TBD
+## 1.1.0 - 2020-01-07
 
 ### Added
 
-- Nothing.
+- check newrelic extension before function calls
 
 ### Changed
 
-- Nothing.
+- migrate packages from zendframework to laminas
 
 ### Deprecated
 

@@ -6,7 +6,7 @@ namespace Los\MezzioSwooleNewrelic;
 
 use Swoole\Http\Request as SwooleHttpRequest;
 use Swoole\Http\Response as SwooleHttpResponse;
-use Zend\Expressive\Swoole\SwooleRequestHandlerRunner as ZendSwooleRequestHandlerRunner;
+use Mezzio\Swoole\SwooleRequestHandlerRunner as ZendSwooleRequestHandlerRunner;
 
 class SwooleRequestHandlerRunner extends ZendSwooleRequestHandlerRunner
 {
