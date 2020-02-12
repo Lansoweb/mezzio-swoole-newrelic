@@ -23,8 +23,7 @@
         "psr/container": "^1.0",
         "psr/http-message": "^1.0",
         "mezzio/mezzio-swoole": "^2.5",
-        "laminas/laminas-stratigility": "^3.2",
-        "laminas/laminas-dependency-plugin": "^0.2"
+        "laminas/laminas-stratigility": "^3.2"
     },
     "extra": {
         "zf": {
