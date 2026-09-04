@@ -1,5 +1,11 @@
 # Mezzio Swoole Newrelic
 
+> [!WARNING]
+> ## Archived
+> This Mezzio/Swoole/New Relic integration is no longer maintained and will
+> receive no further releases. Follow the current documentation from your APM,
+> runtime, and framework vendors when instrumenting new applications.
+
 This lib enables Newrelic transactions and errors when using PHP with Swoole.
 
 ### Installation
